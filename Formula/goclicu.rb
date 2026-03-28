@@ -5,21 +5,21 @@
 class Goclicu < Formula
   desc "A blazing fast terminal UI for ClickUp."
   homepage "https://github.com/PeterJohnBishop/goclicu"
-  version "1.0.6"
+  version "1.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.6/goclicu_Darwin_x86_64.tar.gz"
-      sha256 "4f942204c85593f1ab0e715f47defd2fc1c6e1e498a6f56a75bb65d83a1cb9c7"
+      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.7/goclicu_Darwin_x86_64.tar.gz"
+      sha256 "de0aefafb6dd6bbd169020a060a692a4205d6c4fd66eb4182927d93b6b5daecd"
 
       define_method(:install) do
         bin.install "goclicu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.6/goclicu_Darwin_arm64.tar.gz"
-      sha256 "a9d0e0eb0360444dd7252fcb6d8898f02ab423647fac960ae9d7bf3bfa5bc966"
+      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.7/goclicu_Darwin_arm64.tar.gz"
+      sha256 "1f640d76cb0701de5fe793775a2ca9a5ff5001357cd3f1b3e014b5c11af38750"
 
       define_method(:install) do
         bin.install "goclicu"
@@ -29,15 +29,15 @@ class Goclicu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.6/goclicu_Linux_x86_64.tar.gz"
-      sha256 "a52d9a2c2ac656278698cfe1d84375f755ebb8ec69b86f7be97e8d576c37b5df"
+      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.7/goclicu_Linux_x86_64.tar.gz"
+      sha256 "3d636e0e6e8c6067e98b3a06bc3a02eebbc331c9cf70dcd96b8dd80aa2e87484"
       define_method(:install) do
         bin.install "goclicu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.6/goclicu_Linux_arm64.tar.gz"
-      sha256 "b10c19f4d7ae4901ea4c4bcd641be391910be8d66809a0ff1f68687efbc4c1e7"
+      url "https://github.com/PeterJohnBishop/goclicu/releases/download/v1.0.7/goclicu_Linux_arm64.tar.gz"
+      sha256 "c18d9da6be7dc8f58af493625d800fbc84a5c497f05882600b5b691dc4aaec5b"
       define_method(:install) do
         bin.install "goclicu"
       end
