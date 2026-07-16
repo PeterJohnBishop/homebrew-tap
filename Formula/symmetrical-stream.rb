@@ -1,8 +1,8 @@
 class SymmetricalStream < Formula
   desc "Peer-to-peer file transfer over WebRTC"
   homepage "https://github.com/peterjohnbishop/symmetrical-stream"
-  url "https://github.com/peterjohnbishop/symmetrical-stream/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "9e4992ac803a4bd2884325e34262651e3605c1ca4b3f28c7121544c189f59e45"
+  url "https://github.com/peterjohnbishop/symmetrical-stream/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "e12d2a4a316a5605809dee1373d253601d8fa6424f46a11889a43bd66dd0244a"
   license "MIT" 
 
   depends_on "go" => :build
