@@ -8,9 +8,13 @@ class SymmetricalStream < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
-  end
+    ldflags = %W[
+      -s -w
+      -X github.com/peterjohnbishop/symmetrical-stream/signaling.DefaultServerURL=symmetrical-companion-uvmuo.ondigitalocean.app
+    ]
 
+    system "go", "build", *std_go_args(ldflags: ldflags.join(" "))
+  end
   test do
     system "#{bin}/symmetrical-stream", "--help"
   end
